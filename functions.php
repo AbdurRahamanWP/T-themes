@@ -197,3 +197,17 @@ require_once ZAFRAM_THEMEROOT_DIR . '/inc/init.php';
 
 require_once ZAFRAM_THEMEROOT_DIR . '/lib/init.php';
 
+
+add_action('banner_section_after_menu','branner_section_after_breadcamp_function',10,1);
+
+
+function branner_section_after_breadcamp_function($postID){
+
+
+echo 'This Is my Action Hook : ';
+echo "<br>";
+echo "After sumation 10 : ";
+echo $name = $postID + 10;
+
+
+} ?>

@@ -110,3 +110,11 @@ $top_btn_url       = isset( $opt['top_btn_url']) ? $opt['top_btn_url'] : '';
 
     <?php } ?>
 <?php } ?>
+
+
+<?php
+echo  $pid = $post->ID;
+echo '<br>';
+do_action('banner_section_after_menu',$pid);
+
+?>
