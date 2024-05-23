@@ -1,0 +1,120 @@
+/*============================================================================================
+	Breadcrumbs Area
+==============================================================================================*/
+.breadcrumbs-area {
+  padding: 104px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.breadcrumbs-bg-image .thumbnail-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.breadcrumbs-area::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 19, 18, 0.86);
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.breadcrumbs-area::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 306px;
+  background-image: url("../images/breadcrumbs-bg-shape.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.breadcrumbs-content h4 {
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+.breadcrumbs-menu li {
+  display: inline-block;
+  margin-right: 14px;
+  padding-right: 14px;
+  position: relative;
+}
+.breadcrumbs-menu li::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 1px;
+  background: #FFFFFF;
+  right: -6px;
+  top: 50%;
+}
+.breadcrumbs-menu li:last-child::before {
+  display: none;
+}
+.breadcrumbs-menu li:last-child {
+  padding: 0;
+  margin: 0;
+}
+.breadcrumbs-menu li a {
+  color: #FFFFFF;
+  line-height: 40px;
+}
+.breadcrumbs-menu li.active a,
+.breadcrumbs-menu li a:hover {
+  color: #ffaf01;
+}
+.breadcrumbs-menu-meta {
+  margin-top: 24px;
+}
+.breadcrumbs-menu-meta li {
+  display: inline-block;
+  margin-right: 30px;
+  color: #e7f0ee;
+  font-size: 18px;
+}
+.breadcrumbs-menu-meta li i {
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+}
+.breadcrumbs-menu-meta li:last-child {
+  margin: 0;
+}
+.breadcrumbs-menu-meta li i {
+  color: #ffaf01;
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcrumbs-area {
+    padding: 56px 0px !important;
+  }
+  .breadcrumbs-content h4 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .breadcrumbs-menu-meta li {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  .breadcrumbs-menu-meta {
+    margin-top: 10px;
+  }
+}
+
+/*============================================================================================
+	End Breadcrumbs Area
+==============================================================================================*/

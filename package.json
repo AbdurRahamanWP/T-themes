@@ -1,0 +1,22 @@
+{
+  "name": "zafram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/droit-themes/zafram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/droit-themes/zafram/issues"
+  },
+  "homepage": "https://github.com/droit-themes/zafram#readme"
+}

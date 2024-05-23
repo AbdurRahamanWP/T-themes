@@ -1,0 +1,200 @@
+/*============================================================================================
+	What We Do Area
+==============================================================================================*/
+.what-we-do-area {
+  background: #dcf3e8;
+  padding: 95px 0px 135px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.what-we-do-shape-bg {
+  position: absolute;
+  bottom: 64px;
+  left: 74px;
+  z-index: -1;
+}
+.what-we-do-shape-bg img {
+  width: 100%;
+  height: 100%;
+  animation-name: shake;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.support-highlight-card {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+.support-highlight-card:hover .support-highlight-icon {
+  background: #ffaf01;
+}
+.support-highlight-icon {
+  width: 80px;
+  height: 80px;
+  background: #0b6755;
+  border-radius: 100%;
+  line-height: 80px;
+  text-align: center;
+  min-width: 80px;
+  transition: all 0.4s ease;
+}
+.support-highlight-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.s-highlight-card-content h5 {
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+}
+.s-highlight-card-content p {
+  font-size: 16px;
+  font-weight: ;
+  line-height: 160%;
+  margin: 0;
+}
+.what-we-do-inner {
+  margin-top: 126px;
+}
+.what-we-do-content {
+  padding-right: 48px;
+}
+
+.what-we-do-sm-title {
+  color: #0b6755;
+  font-size: 20px;
+  line-height: 160%;
+  display: block;
+  margin-bottom: 16px;
+}
+.what-we-do-big-title {
+  font-size: 44px;
+  margin-bottom: 40px;
+}
+.what-we-do-info-widget {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.what-we-do-info-widget:last-child {
+  margin: 0;
+}
+.what-we-do-info-widget:hover .what-we-do-info-icon i {
+  background: #ffaf01;
+  color: #FFFFFF;
+}
+.what-we-do-info-icon i {
+  width: 20px;
+  height: 20px;
+  line-height: 23px;
+  text-align: center;
+  font-size: 10px;
+  background: #0b6755;
+  display: inline-block;
+  border-radius: 100%;
+  color: #FFFFFF;
+  position: relative;
+  top: 3px;
+  transition: all 0.4s ease;
+}
+.what-we-do-info-content h6 {
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+.what-we-do-info-content p {
+  font-size: 16px;
+  line-height: 160%;
+  margin: 0;
+}
+.what-we-do-img {
+  position: relative;
+  z-index: 2;
+  padding-left: 48px;
+}
+.what-we-do-img::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/what-we-do/img-shape.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.what-we-do-img img {
+  width: 100%;
+  height: 594px;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .what-we-do-img {
+    padding-left: 0;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .what-we-do-area {
+    padding: 16px 0px 56px !important;
+  }
+  .support-highlight-card {
+    text-align: center;
+    display: block;
+  }
+  .support-highlight-icon {
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    min-width: 68px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .support-highlight-icon img {
+    width: 34px;
+    height: 34px;
+  }
+  .s-highlight-card-content h5 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+  .what-we-do-content {
+    padding-right: 0;
+  }
+  .what-we-do-sm-title {
+    font-size: 16px;
+  }
+  .what-we-do-big-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .what-we-do-info-content h6 {
+    font-size: 18px;
+  }
+  .what-we-do-inner {
+    margin-top: 56px;
+  }
+  .what-we-do-img {
+    padding-left: 0;
+  }
+  .what-we-do-shape-bg {
+    display: none;
+  }
+  .what-we-do-img img {
+    height: 300px;
+  }
+  .what-we-do-img {
+    margin-top: 24px;
+  }
+}
+
+/*============================================================================================
+	End What We Do Area
+==============================================================================================*/

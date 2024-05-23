@@ -1,0 +1,211 @@
+/*============================================================================================
+	Faq Area
+==============================================================================================*/
+.faq-area {
+  background: #dcf3e8;
+  padding: 120px 0px;
+  position: relative;
+  z-index: 2;
+}
+.faq-section-shape-1 {
+  position: absolute;
+  left: 8%;
+  bottom: 15%;
+  z-index: -1;
+  animation-name: shake;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.faq-section-shape-2 {
+  position: absolute;
+  right: 7%;
+  top: 15%;
+  z-index: -1;
+  animation-name: shake;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.single-faq-widget {
+  margin-bottom: 40px;
+}
+.single-faq-widget:last-child {
+  margin: 0;
+}
+.single-faq-widget .accordion-button {
+  background: transparent;
+  padding: 0;
+  border-bottom: 2px solid #FFFFFF !important;
+  color: #04091e;
+  padding-bottom: 20px;
+  border-radius: 0px;
+}
+.single-faq-widget .accordion-button h3 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.single-faq-widget .accordion-button:not(.collapsed) h3 {
+  color: #0b6755;
+}
+.single-faq-widget .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border-bottom: 1px solid transparent !important;
+  border-radius: 8px 8px 0px 0px !important;
+}
+.single-faq-widget .accordion-button:focus {
+  box-shadow: none;
+}
+.faq-inner-body {
+  border-bottom: 2px solid #FFFFFF;
+  border-top: 0 !important;
+  border-radius: 0;
+  padding-bottom: 22px;
+}
+.faq-inner-body-text {
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+.single-faq-widget .accordion-button::after {
+  transform: none;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+  font-family: uicons-regular-rounded !important;
+  content: "\f10d";
+  border-radius: 100%;
+  background: transparent;
+  text-align: center;
+  line-height: 28px;
+  color: #04091e;
+  font-size: 20px;
+}
+.single-faq-widget .accordion-button:not(.collapsed)::after {
+  color: #0b6755;
+  content: "\f114";
+  font-size: 20px;
+  background: transparent;
+}
+.faq-images {
+  float: right;
+  position: relative;
+}
+.faq-images img {
+  width: 500px;
+  height: 623px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.faq-service-widget {
+  background: #ffaf01;
+  border-radius: 5px;
+  padding: 20px 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  left: 50%;
+  justify-content: center;
+  max-width: 77%;
+  margin: auto;
+  transform: translate(-50%);
+}
+.faq-service-widget-icon {
+  width: 64px;
+  height: 64px;
+  background: #0b6755;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 64px;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+.faq-service-widget-content p {
+  font-size: 16px;
+  line-height: 160%;
+  color: #04091e;
+  margin-bottom: 4px;
+}
+.faq-service-widget-content a {
+  display: inline-block;
+  color: #04091e;
+  font-size: 20px;
+  line-height: 160%;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-images img {
+    width: 100%;
+  }
+  .faq-images {
+    float: initial;
+    margin-top: 40px;
+  }
+  .faq-section-shape-1 {
+    display: none;
+  }
+  .faq-section-shape-2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .faq-area {
+    padding: 56px 0px;
+  }
+  .faq-section-shape-1 {
+    display: none;
+  }
+  .faq-section-shape-2 {
+    display: none;
+  }
+  .single-faq-widget .accordion-button h3 {
+    font-size: 16px;
+  }
+  .single-faq-widget .accordion-button::after {
+    top: -2px;
+    font-size: 14px;
+  }
+  .single-faq-widget .accordion-button:not(.collapsed)::after {
+    font-size: 16px;
+  }
+  .single-faq-widget {
+    margin-bottom: 20px;
+  }
+  .faq-images img {
+    height: 320px;
+  }
+  .faq-images {
+    margin-top: 40px;
+  }
+  .faq-service-widget {
+    bottom: 14px;
+    max-width: 90%;
+    text-align: center;
+    display: block;
+  }
+  .faq-service-widget-icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .faq-service-widget-content a {
+    font-size: 14px;
+  }
+}
+
+/*============================================================================================
+      End Faq Area
+  ==============================================================================================*/

@@ -1,0 +1,52 @@
+/*============================================================================================
+	Company Fact Area
+==============================================================================================*/
+.company-fact-area {
+  padding: 34px 0px 100px;
+}
+.company-fact-card {
+  text-align: center;
+  margin-top: 40px;
+}
+.company-fact-content h1 {
+  color: #0b6755;
+  line-height: 140%;
+  font-weight: 800;
+  margin: 0;
+}
+.company-fact-content p {
+  margin: 0;
+  color: #4d5461;
+  line-height: 160%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .company-fact-content h1 {
+    font-size: 38px;
+  }
+  .company-fact-content p {
+    font-size: 16px;
+  }
+  .company-fact-area {
+    padding: 40px 0px 60px;
+  }
+  .company-fact-card {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .company-fact-area {
+    padding: 32px 0px 56px;
+  }
+  .company-fact-content h1 {
+    font-size: 30px;
+  }
+  .company-fact-card {
+    margin-top: 24px;
+  }
+}
+
+/*============================================================================================
+	End Company Fact Area
+==============================================================================================*/

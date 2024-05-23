@@ -1,0 +1,212 @@
+/*============================================================================================
+	Header Area
+==============================================================================================*/
+.header-area {
+  padding: 20px 0px;
+  border-bottom: 1px solid #FFFFFF;30;
+}
+.header-area.is-sticky {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  transition: all 0.2s ease;
+  z-index: 666;
+  animation: fadeInDown 1s both 0.2s;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px #04091e1a;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo.logo-2,
+.header-area.is-sticky .header-logo.logo-1 {
+  display: none;
+}
+.header-area.is-sticky .header-logo.logo-2 {
+  display: block;
+}
+.header-logo img {
+  width: 164px;
+  height: 44px;
+  object-fit: contain;
+}
+.header-menu-list li {
+  display: inline-block;
+  margin-right: 42px;
+}
+.header-menu-list li:last-child {
+  margin: 0;
+}
+.header-menu-list li a {
+  color: #FFFFFF;
+  line-height: 160%;
+  font-size: 16px;
+}
+.header-menu-btn .theme-btn span {
+  text-decoration: underline;
+}
+.header-menu-btn .theme-btn:hover {
+  background: #FFFFFF;
+  color: #0b6755;
+}
+
+.header-area.is-sticky .header-menu-list li a {
+  color: #04091e;
+}
+.header-area.is-sticky .header-menu-list li a:hover {
+  color: #0b6755;
+}
+.header-area.is-sticky .header-menu-list li.active a {
+  color: #0b6755;
+}
+.header-area.is-sticky .header-menu-btn .theme-btn:hover {
+  background: #0b6755;
+  color: #FFFFFF;
+}
+
+/* Dropdown Menu */
+.header-area .navigation li .sub-menu {
+  position: absolute;
+  top: 80px;
+  width: 220px;
+  background: #fff;
+  z-index: 5222;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transform: translateY(-20px);
+  box-shadow: 0px 10px 30px #04091e17;
+  border-radius: 4px;
+  margin: 0;
+  padding: 12px 0px;
+}
+.header-area.header-style-2 .navigation li .sub-menu {
+  top: 124px;
+}
+.header-area.header-style-2.is-sticky .navigation li .sub-menu {
+  top: 74px;
+}
+.header-area .navigation li .sub-menu::before {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  height: 12px;
+  margin-left: -6px;
+  opacity: 1;
+  position: absolute;
+  left: 24px;
+  top: -6px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: all 0.2s ease;
+  visibility: visible;
+  width: 12px;
+}
+.header-area .navigation li .sub-menu li.active a {
+  color: #0b6755 !important;
+  padding: 10px 25px;
+}
+.header-area.is-sticky .navigation li .sub-menu a {
+  color: #04091e !important;
+}
+.header-area.is-sticky .navigation li .sub-menu a:hover {
+  color: #0b6755 !important;
+}
+.header-area .navigation li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+.header-area .navigation li .sub-menu li {
+  display: block;
+  margin: 0;
+  text-align: left;
+  border-bottom: 1.5px solid #04091e17;
+}
+.header-area .navigation li .sub-menu li:last-child {
+  border: none;
+}
+.header-area .navigation li .sub-menu li a {
+  color: #04091e;
+  display: block;
+  padding: 10px 25px;
+  font-size: 15px;
+  border-radius: 0;
+}
+.header-area .navigation li .sub-menu li a:hover {
+  color: #0b6755;
+  padding: 10px 25px;
+  margin-left: 5px;
+}
+.header-area .navigation li:hover .sub-menu a::before {
+  opacity: 0;
+  visibility: hidden;
+}
+.header-area .navigation li .sub-menu li a::before {
+  display: none;
+}
+
+/* Header Style 2 */
+.header-style-2 {
+  background: #FFFFFF;
+  padding: 16px 0px;
+}
+.header-menu-list.style-2 li a {
+  color: #04091e;
+}
+.header-menu-list.style-2 li.active a,
+.header-menu-list.style-2 li a:hover {
+  color: #0b6755;
+}
+.header-menu-btn.style-2 .theme-btn {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  text-decoration: none;
+  height: 59px;
+  padding: 15px 30px;
+}
+.header-menu-btn.style-2 .theme-btn:hover {
+  background: #0b6755;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+/* Header Style 2 */
+.header-area.header-style-3 {
+  border-bottom: 1px solid #04091e21;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .header-menu {
+    display: none;
+  }
+  .header-menu-btn {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-menu {
+    display: none;
+  }
+  .header-menu-btn {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+  .header-menu-btn {
+    display: none;
+  }
+}
+
+/*============================================================================================
+	End Header Area
+==============================================================================================*/

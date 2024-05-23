@@ -1,0 +1,84 @@
+/*============================================================================================
+	Topbar Area
+==============================================================================================*/
+.topbar-area {
+  background: #0b6755;
+  padding: 12px 0px;
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar-contact-list li {
+  display: inline-block;
+  margin-right: 34px;
+}
+.topbar-contact-list li:last-child {
+  margin: 0;
+}
+.topbar-contact-list li a {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 160%;
+}
+.topbar-contact-list li i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+.topbar-language {
+  display: inline-flex;
+  align-items: center;
+  gap: 08px;
+}
+
+/* Select Box */
+.nice-select {
+  margin: 0;
+  background: transparent !important;
+  border: none !important;
+  color: #FFFFFF;
+  padding: 0;
+  height: auto;
+  line-height: 160%;
+  padding-right: 28px;
+}
+.nice-select .list {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 4px 57px 0px rgba(103, 120, 136, 0.14);
+  margin-top: 6px;
+  left: -36px;
+  color: #04091e;
+  width: 110px;
+}
+.nice-select .option {
+  font-weight: 500;
+  line-height: 34px;
+  min-height: 34px;
+}
+.nice-select .option:hover {
+  background-color: #04091e;
+  color: #FFFFFF;
+}
+.nice-select::after {
+  border-bottom: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+  margin-top: -6px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .topbar-area {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .topbar-area {
+    display: none;
+  }
+}
+
+/*============================================================================================
+	End Topbar Area
+==============================================================================================*/

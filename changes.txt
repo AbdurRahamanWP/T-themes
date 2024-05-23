@@ -1,0 +1,19 @@
+
+----- 1.0.2 (09 March  2023) -----
+New    : Dark Demo  Integration
+New    : Dark Demo Added
+New    : RTL Demo Added
+update : Demo content updated
+update : Theme option updated
+
+
+----- 1.0.1 (02 February  2023) -----
+New    : 05 New Home Page Added
+update : Demo content updated
+New    : Integration WooCommerce
+
+
+----- 1.0.0 (30 January 2023) -----
+Initial release
+
+
