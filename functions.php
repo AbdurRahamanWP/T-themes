@@ -202,12 +202,23 @@ add_action('banner_section_after_menu','branner_section_after_breadcamp_function
 
 
 function branner_section_after_breadcamp_function($postID){
+	echo 'This Is my Action Hook : ';
+	echo "<br>";
+	echo "After sumation 10 : ";
+	echo $name = $postID + 10;
+} 
 
 
-echo 'This Is my Action Hook : ';
-echo "<br>";
-echo "After sumation 10 : ";
-echo $name = $postID + 10;
+add_filter('banner_section_after_menu2','filter_hook_function',10,2);
 
 
-} ?>
+function filter_hook_function($pidA){
+
+	$number = 10;
+	 $pidA = $number + 10;
+
+	return $pidA;
+	
+}
+
+?>

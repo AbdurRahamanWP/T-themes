@@ -117,4 +117,11 @@ echo  $pid = $post->ID;
 echo '<br>';
 do_action('banner_section_after_menu',$pid);
 
+echo "<br>";
+echo "Action Hook";
+echo $pidA =  $post->ID;
+
+echo $uname = 'AbdurRahaman';
+apply_filters('banner_section_after_menu2',$uname,'news');
+
 ?>
