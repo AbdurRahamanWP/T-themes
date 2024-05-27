@@ -113,15 +113,18 @@ $top_btn_url       = isset( $opt['top_btn_url']) ? $opt['top_btn_url'] : '';
 
 
 <?php
+echo "Action Hook";
+echo '<br>';
 echo  $pid = $post->ID;
 echo '<br>';
 do_action('banner_section_after_menu',$pid);
 
 echo "<br>";
-echo "Action Hook";
-echo $pidA =  $post->ID;
-
+echo "Filter Hook";
+echo "<br>";
 echo $uname = 'AbdurRahaman';
-apply_filters('banner_section_after_menu2',$uname,'news');
+echo "<br>";
 
-?>
+$filterabledata = apply_filters('banner_section_after_menu2',$uname,'news');
+echo 'After Filter : '. $filterabledata;
+?> 

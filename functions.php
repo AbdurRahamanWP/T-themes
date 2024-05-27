@@ -212,12 +212,9 @@ function branner_section_after_breadcamp_function($postID){
 add_filter('banner_section_after_menu2','filter_hook_function',10,2);
 
 
-function filter_hook_function($pidA){
-
-	$number = 10;
-	 $pidA = $number + 10;
-
-	return $pidA;
+function filter_hook_function($uname){
+		$uname = 'Hujafa Bin Abdour Rahaman';
+	return $uname;
 	
 }
 
